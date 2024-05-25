@@ -7,7 +7,6 @@ install.packages("tibble")
 library("mediation")
 mediation = read.csv("https://raw.githubusercontent.com/timbulwidodostp/mediation/main/mediation/mediation.csv",sep = ";")
 # Estimate sensitivity analysis for causal mediation effects Use mediate (mediation) (In) With R Software
-mediation = read.csv("C:\\mediation.csv",sep = ";")
 mediation_1 <- lm(bweight ~ college + age, data=mediation)
 mediation_2 <- lm(sespar ~ college + bweight + age, data=mediation)
 mediation <- mediate(mediation_1, mediation_2, sims=1000, treat="college", mediator="bweight")

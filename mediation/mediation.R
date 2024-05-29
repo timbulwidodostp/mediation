@@ -5,6 +5,10 @@
 install.packages("mediation")
 install.packages("tibble")
 install.packages("xfun")
+install.packages("zoo")
+install.packages("sandwich")
+install.packages("callr")
+install.packages("rlang")
 library("mediation")
 mediation = read.csv("https://raw.githubusercontent.com/timbulwidodostp/mediation/main/mediation/mediation.csv",sep = ";")
 # Estimate sensitivity analysis for causal mediation effects Use mediate (mediation) (In) With R Software
